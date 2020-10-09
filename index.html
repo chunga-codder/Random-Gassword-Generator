@@ -8,28 +8,70 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <header>
+        <div class="card-header">
         <h1>Password Generator</h1>
       </header>
       <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
+    
+         
         </div>
+        <div class="controls">
+            <div class="control length" id="length-box" >
+              <label for="length">Password Length</label>
+              <input type="range" id='length' min="4" max="20" list="ranges">
+              <datalist id="ranges">
+                <option value="4" label="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">        
+                <option value="9">
+                <option value="10">
+                <option value="11">
+                <option value="12" label="12">
+                <option value="13">
+                <option value="14">
+                <option value="15">
+                <option value="16">
+                <option value="17">
+                <option value="18">
+                <option value="19">
+                <option value="20">
+              </datalist>
+            </div>
+            <div class="control">
+              <input type="checkbox" id="lowercase">
+              <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase Characters</span></label>
+            </div>
+            <div class="control">
+              <input type="checkbox" id="uppercase">
+              <label class="check-label" for="uppercase"><span class="checkbox">Use Uppercase Characters</span></label>
+            </div>
+            <div class="control">
+              <input type="checkbox" id="numbers">
+              <label class="check-label" for="numbers"><span class="checkbox">Use Numbers</span></label>
+            </div>
+            <div class="control">
+              <input type="checkbox" id="punctuation">
+              <label class="check-label" for="punctuation"><span class="checkbox">Use special characters</span></label>
         <div class="card-body">
           <textarea
             readonly
             id="password"
             placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+            aria-label="Generated Password">
+          </textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="generate" >Generate Password</button>
         </div>
       </div>
     </div>
+    <script src='https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js'></script>
     <script src="script.js"></script>
   </body>
 </html>

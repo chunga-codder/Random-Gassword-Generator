@@ -1,28 +1,152 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 body {
+    width: 100%;
+    height: 100%;
+    margin: 40px;
+    padding: 40px;
+    
+}
+.wrapper {
+    width: auto;
+  margin: 20px;
+  padding: 20px;
   font-family: sans-serif;
   background-color: #f9fbfd;
+  overflow: hidden;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+  flex-flow: column wrap;
 }
-
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: bisque;
-}
+  
+.info {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
+  }
+  .title-section {
+    background: #fd9d08;
+    padding: 2px 10px;
+    color: white;
+  }
+  h1 {
+    font-size: 1.1rem;
+    color: bisque;
+  }
+  .inner-section {
+    padding: 20px;
+  }
+  .wrapper .password-section {
+    position: relative;
+    border: 2px solid lightgray;
+    color: gray;
+    margin-top: 20px;
+    padding: 2px 2px 2px 8px;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .wrapper .password-section .alert {
+    position: absolute;
+    padding: 0 5px;
+    border-radius: 2px;
+    width: 21ch;
+    height: 89%;
+    left: 2px;
+    top: -100%;
+    width: 96%;
+    text-align: center;
+    color: #333;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .wrapper .password-section .alert.success {
+    background: rgb(29,161,242, 0.9);
+    opacity: 1;
+  }
+  .wrapper .password-section .alert.fail {
+    background: rgb(230,0,35, 0.9);
+    color: white;
+    opacity: 1;
+  }
+  .wrapper .password-section .copy {
+    height: 100%;
+    width: 50px;
+    background: #e60023;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .wrapper .password-section .copy:hover {
+    background: #ff7a00;
+  }
+  .wrapper .controls {
+    text-align: left;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .wrapper .controls .control {
+    padding: 3px;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    margin: 2px;
+  }
+  .wrapper .controls .generate {
+    width: 10%;
+    border: 0;
+    color: white;
+    background: #7e7871;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+  }
+  .wrapper .controls .generate:hover {
+    background: #66615c;
+  }
+  #length-box {
+    width: 100%;
+  }
+  #length-box input {
+    width: 100%;
+  }
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+  label.check-label {
+    position: relative;
+  }
+  label.check-label:before {
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    left: -24px;
+    top: 0;
+    border: 0.5px solid lightgray;
+    position: absolute;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0, 0.82, 1, 1.81);
+  }
+  input[type="checkbox"]:checked + label.check-label:before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 0.8rem;
+    color: #212121;
+    text-align: center;
+    background: #00e676;
+    transition: all 0.3s cubic-bezier(0, 0.82, 1, 1.81);
+  }
+  
 
 header {
   text-align: center;
@@ -39,17 +163,17 @@ header {
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: auto;
   padding: 30px 40px;
 }
 
 .card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #2b2f33;
-  height: 2px;
-}
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #2b2f33;
+    height: 2px;
+  }
 
 .card-body {
   min-height: 100px;
@@ -64,7 +188,7 @@ header {
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
+  height: 100%;
 }
 
 .card-footer::after {
