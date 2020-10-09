@@ -33,23 +33,8 @@
           <label for="length">Password Length (8 - 128)</label>
           <input type="range" id='length' min="8" max="128" value = "8"step = "1" list="slider" oninput="outputUpdate(length)">
           <output for = "length", id="slider"> 8 </output>
-              <datalist id="range">
-                  <!-- setting my range incremental values which will not be functional for now-->
-                <option value="8" label="8">8</option>
-                <option value="18"></option>
-                <option value="28" label="28">28</option>
-                <option value="38"></option>
-                <option value="48"> </option>
-                <option value="58" label="58"></option>
-                <option value="68"></option>
-                <option value="78">
-                <option value="88" label="88"></option>
-                <option value="98"></option>
-                <option value="108"></option>
-                <option value="128" label="128"></option>
+              <datalist id="range"></datalist>
                
-              </datalist>
-            </div>
             <!-- setting my controles and my check boxes and also,setting the spans because i want to access them with their id's -->
             <div class="control">
               <input type="checkbox" id="lowercase">
