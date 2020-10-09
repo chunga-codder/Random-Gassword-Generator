@@ -11,7 +11,7 @@ body {
      width: 80%;
     padding: 20px;
     font-family: sans-serif;
-    background-color: #f9fbfd;
+    background-color: #eaeff3;
     overflow: hidden;
     margin: auto;
     border-radius: 5px;
@@ -124,7 +124,7 @@ header {
     background-color: hsl(0, 81%, 35%);
     border-radius: 5px;
     border-width: 1px;
-    color: hsl(206, 17%, 28%);
+    color: hsl(207, 24%, 93%);
     font-size: 18px;
     margin: 0 auto;
     max-width: auto;
