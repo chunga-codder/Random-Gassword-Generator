@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,24 +28,25 @@
          <div class="alert" id="alert"><span class="message" id="message"></div>
 
        </div>
-        <div class="controls">
-            <div class="control length" id="length-box" >
-              <label for="length">Password Length (8 - 128)</label>
-              <input type="range" id='length' min="8" max="128" list="ranges">
-              <datalist id="ranges">
+       <div class="controls">
+        <div class="control length" id="length-box" >
+          <label for="length">Password Length (8 - 128)</label>
+          <input type="range" id='length' min="8" max="128" value = "8"step = "0.5" list="slider" oninput="outputUpdate(length)">
+          <output for = "length", id="slider"> 8 </output>
+              <datalist id="range">
                   <!-- setting my range incremental values -->
-                <option value="8" label="8">
-                <option value="18" label="18">
-                <option value="28" label="28">
-                <option value="38">
-                <option value="48">        
-                <option value="58" label="58">
-                <option value="68">
+                <option value="8" label="8">8</option>
+                <option value="18"></option>
+                <option value="28" label="28">28</option>
+                <option value="38"></option>
+                <option value="48"> </option>
+                <option value="58" label="58"></option>
+                <option value="68"></option>
                 <option value="78">
-                <option value="88" label="88">
-                <option value="98">
-                <option value="108">
-                <option value="128" label="128">
+                <option value="88" label="88"></option>
+                <option value="98"></option>
+                <option value="108"></option>
+                <option value="128" label="128"></option>
                
               </datalist>
             </div>
