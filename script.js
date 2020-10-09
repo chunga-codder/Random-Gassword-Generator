@@ -1,5 +1,5 @@
   
-var lowercase = "abcdefghijklmnopqrstuvwxyz",// sasigning my characters to var 
+var lowercase = "abcdefghijklmnopqrstuvwxyz",// asigning my characters to var 
 uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 numbers = "0123456789",
 punctuation = "!@#$%^&*()_+~`|}{[]:;?><,./-=",
@@ -16,14 +16,14 @@ plength,
 userPassword,
 passwordCharSet;
 
-
+//setting my range slider output values to display when sliding.
 function outputUpdate(){
     var range = document.getElementById("length");
-var output = document.getElementById("slider");
-output.innerHTML = range.value;
-range.oninput = function() {
-output.innerHTML = this.value;
-}
+    var output = document.getElementById("slider");
+    output.innerHTML = range.value;
+    range.oninput = function() {
+    output.innerHTML = this.value;
+  }
 }
 //setting my generate function to be called on an onclick on generate
 function generate() {

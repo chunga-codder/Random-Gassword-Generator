@@ -13,7 +13,7 @@
   <!-- just setting some html/root properties i want to run in all doc -->
   <style>
     * {
-        margin-top: 10px;
+        margin-top: 5px;
     }
   </style>
 
@@ -31,10 +31,10 @@
        <div class="controls">
         <div class="control length" id="length-box" >
           <label for="length">Password Length (8 - 128)</label>
-          <input type="range" id='length' min="8" max="128" value = "8"step = "0.5" list="slider" oninput="outputUpdate(length)">
+          <input type="range" id='length' min="8" max="128" value = "8"step = "1" list="slider" oninput="outputUpdate(length)">
           <output for = "length", id="slider"> 8 </output>
               <datalist id="range">
-                  <!-- setting my range incremental values -->
+                  <!-- setting my range incremental values which will not be functional for now-->
                 <option value="8" label="8">8</option>
                 <option value="18"></option>
                 <option value="28" label="28">28</option>
@@ -50,7 +50,7 @@
                
               </datalist>
             </div>
-            <!-- setting my controles and my check boxes -->
+            <!-- setting my controles and my check boxes and also,setting the spans because i want to access them with their id's -->
             <div class="control">
               <input type="checkbox" id="lowercase">
               <label class="check-label" for="lowercase"><span class="checkbox">Lowercase Characters</span></label>
@@ -59,13 +59,16 @@
               <input type="checkbox" id="uppercase">
               <label class="check-label" for="uppercase"><span class="checkbox">Uppercase Characters</span></label>
             </div>
+
             <div class="control">
               <input type="checkbox" id="numbers">
               <label class="check-label" for="numbers"><span class="checkbox">Numbers</span></label>
             </div>
+
             <div class="control">
               <input type="checkbox" id="punctuation">
               <label class="check-label" for="punctuation"><span class="checkbox">special characters</span></label>
+            </div>
         <div class="card-body">
           <textarea
             readonly
@@ -74,12 +77,14 @@
             aria-label="Generated Password">
           </textarea>
         </div>
+
         <div class="card-footer">
           <button id="generate" class="generate" >Generate Password</button>
         </div>
+
       </div>
     </div>
-    <!-- bootsrap script -->
+    <!-- bootsrap script  in here -->
     <script src='https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js'></script>
     <script src="script.js"></script>
   </body>
