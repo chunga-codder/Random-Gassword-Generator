@@ -1,8 +1,9 @@
-var lowercase = "abcdefghijklmnopqrstuvwxyz",
+var lowercase = "abcdefghijklmnopqrstuvwxyz",// sasigning my characters to var 
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
   punctuation = "!@#$%^&*()_+~`|}{[]:;?><,./-=",
-  lowercaseInput = document.getElementById("lowercase"),
+  
+  lowercaseInput = document.getElementById("lowercase"),//setting a short hand for a cleaner code
   uppercaseInput = document.getElementById("uppercase"),
   punctuationInput = document.getElementById("punctuation"),
   numbersInput = document.getElementById("numbers"),
@@ -20,7 +21,7 @@ function generate() {
   userPassword = "";
   passwordCharSet = "";
 
-  //setting my if conditions for my check boxes,which will add the password charset to my cheked box
+  //setting my if conditions for my check boxes,which will add the password charset to my cheked boxgi
   if (lowercaseInput.checked) {
     passwordCharSet += lowercase;
   }

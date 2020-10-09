@@ -4,51 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- adding the bootsrap css link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>Password Generator</title>
+    <title> clinton's Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- just setting some html/root properties i want to run in all doc -->
   <style>
     * {
         margin-top: 10px;
-       
     }
   </style>
 
   <body>
     <div class="wrapper">
       <header>
-        <div class="card-header">
-        <h1>Password Generator</h1>
+        <div class="card-header"></div>
+        <h1><i>Password Generator</i></h1>
       </header>
-      <div class="card">
-    
-        <div class="alert" id="alert"><span class="message" id="message"></div>
-        </div>
+        <div class="card">
+
+         <div class="alert" id="alert"><span class="message" id="message"></div>
+
+       </div>
         <div class="controls">
             <div class="control length" id="length-box" >
-              <label for="length">Password Length (8 - 125)</label>
+              <label for="length">Password Length (8 - 128)</label>
               <input type="range" id='length' min="8" max="128" list="ranges">
               <datalist id="ranges">
-                <option value="4" label="4">
-                <option value="5">
-                <option value="6">
-                <option value="7">
-                <option value="8">        
-                <option value="9">
-                <option value="10">
-                <option value="11">
-                <option value="12" label="12">
-                <option value="13">
-                <option value="14">
-                <option value="15">
-                <option value="16">
-                <option value="17">
-                <option value="18">
-                <option value="19">
-                <option value="20">
+                  <!-- setting my range incremental values -->
+                <option value="8" label="8">
+                <option value="18" label="18">
+                <option value="28" label="28">
+                <option value="38">
+                <option value="48">        
+                <option value="58" label="58">
+                <option value="68">
+                <option value="78">
+                <option value="88" label="88">
+                <option value="98">
+                <option value="108">
+                <option value="128" label="128">
+               
               </datalist>
             </div>
+            <!-- setting my controles and my check boxes -->
             <div class="control">
               <input type="checkbox" id="lowercase">
               <label class="check-label" for="lowercase"><span class="checkbox">Lowercase Characters</span></label>
@@ -77,6 +77,7 @@
         </div>
       </div>
     </div>
+    <!-- bootsrap script -->
     <script src='https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js'></script>
     <script src="script.js"></script>
   </body>
