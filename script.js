@@ -1,5 +1,3 @@
-// Assignment Code
-
 var lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
@@ -15,10 +13,14 @@ var lowercase = "abcdefghijklmnopqrstuvwxyz",
   plength,
   userPassword,
   passwordCharSet;
+
+  //setting my generate function to be called on an onclick on generate
  
 function generate() {
   userPassword = "";
   passwordCharSet = "";
+
+  //setting my if conditions for my check boxes,which will add the password charset to my cheked box
   if (lowercaseInput.checked) {
     passwordCharSet += lowercase;
   }
@@ -37,6 +39,7 @@ function generate() {
     userPassword += passwordCharSet.charAt(
       Math.floor(Math.random() * passwordCharSet.length)
     );
+   // setting an alert for users to make sure they chose a check box
   }
   if (userPassword == "") {
     let alertbox = document.getElementById('alert');
@@ -52,16 +55,3 @@ function generate() {
 }
   
 generateButton.addEventListener("click", generate);
- 
-clipboard.on('success', function(e) {
-    console.info('Action:', e.action);
-    console.info('Text:', e.text);
-    console.info('Trigger:', e.trigger);
-    let alertbox = document.getElementById('alert');
-    alertbox.classList.add('success');
-    setTimeout(function(){ 
-      alertbox.classList.remove('success');
-    }, 3000);
-    
-    e.clearSelection();
-});

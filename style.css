@@ -8,34 +8,31 @@ body {
     
 }
 .wrapper {
-    align-items: center;
-    width: 80%;
-  padding: 20px;
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-  overflow: hidden;
-  margin: auto;
-  border-radius: 5px;
-  flex-flow: column wrap;
-  box-sizing: border-box;
-  max-height: auto;
+     align-items: center;
+     width: 80%;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #f9fbfd;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5px;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    max-height: auto;
 }
-  
-.info {
-    font-size: 0.9rem;
-    text-align: left;
-  }
-  h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     margin: 0;
     padding: 10px;
   }
-  
-  h1 {
+
+h1 {
     font-size: 1.1rem;
     color: bisque;
   }
-  .wrapper .password-section {
+
+.wrapper .password-section {
     position: relative;
     border: 2px solid lightgray;
     color: gray;
@@ -45,7 +42,7 @@ body {
     text-align: left;
     justify-content: space-between;
   }
-  .wrapper .password-section .alert {
+.wrapper .password-section .alert {
     position: absolute;
     padding: 0 5px;
     border-radius: 2px;
@@ -70,7 +67,7 @@ body {
     width: 100%;
     margin: 1px;
   }
-  .wrapper .controls .generate {
+.wrapper .controls .generate {
     width: 30%;
     border: 0;
     color: white;
@@ -80,22 +77,22 @@ body {
     margin-top: 10px;
     transition: all 0.3s ease;
   }
-  .wrapper .controls .generate:hover {
+.wrapper .controls .generate:hover {
     background: #db740c;
   }
-  #length-box {
+#length-box {
     width: 100%;
   }
-  #length-box input {
+#length-box input {
     width: 100%;
   }
-  input[type="checkbox"] {
+input[type="checkbox"] {
     visibility: hidden;
   }
-  label.check-label {
+label.check-label {
     position: relative;
   }
-  label.check-label:before {
+label.check-label:before {
     content: "";
     height: 1rem;
     width: 1rem;
@@ -106,7 +103,7 @@ body {
     background: transparent;
     transition: all 0.3s cubic-bezier(0, 0.82, 1, 1.81);
   }
-  input[type="checkbox"]:checked + label.check-label:before {
+input[type="checkbox"]:checked + label.check-label:before {
     content: "";
     font-family: "FontAwesome";
     font-size: 0.8rem;
@@ -118,61 +115,52 @@ body {
   
 
 header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  background-color: hsl(206, 17%, 28%);
-}
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    background-color: hsl(206, 17%, 28%);
+  }
 
 .card {
-  background-color: hsl(0, 81%, 35%);
-  border-radius: 5px;
-  border-width: 1px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: auto;
-  padding: 0px 40px;
-}
+    background-color: hsl(0, 81%, 35%);
+    border-radius: 5px;
+    border-width: 1px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: auto;
+    padding: 0px 40px;
+ }
+.card-body {
+    min-height: 100px;
+ }
 
-.card-header::after {
+.card-footer {
+   text-align: center;
+ }
+
+.card-footer::before {
     content: " ";
     display: block;
     width: 100%;
-    background: #073c72;
-    height: 2px;
-  }
-
-.card-body {
-  min-height: 100px;
-}
-
-.card-footer {
-  text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #373c41;
-  height: 50%;
-}
+    background: #373c41;
+    height: 50%;
+ }
 
 .card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
+    content: " ";
+    display: block;
+    clear: both;
+ }
 
 button[disabled] {
-  cursor: default;
-  background: #a30f1b;
-}
+    cursor: default;
+    background: #a30f1b;
+ }
 
 .float-right {
-  float: right;
-}
+   float: right;
+ }
    
 .generate {
     border: none;
@@ -188,16 +176,11 @@ button[disabled] {
     cursor: pointer;
   }
   
-  button[disabled] {
-    cursor: default;
-    background: #c0c7cf;
-  }
-  
-  .float-right {
+.float-right {
     float: right;
   }
   
-  #password {
+#password {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -218,23 +201,22 @@ button[disabled] {
     overflow: hidden;
   }
   
-  @media (max-width: 690px) {
-    .btn {
+@media (max-width: 690px) {
+.btn {
       font-size: 1rem;
       margin: 16px 0px 0px 0px;
       padding: 10px 15px;
-    }
-  
-    #password {
+   }
+ }
+#password {
       font-size: 1rem;
-    }
-  }
+ }
   
-  @media (max-width: 500px) {
+ @media (max-width: 500px) {
     .btn {
       font-size: 0.8rem;
-    }
   }
+ }
   
   
 
