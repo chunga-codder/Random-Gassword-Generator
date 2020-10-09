@@ -16,10 +16,16 @@ plength,
 userPassword,
 passwordCharSet;
 
-//setting my generate function to be called on an onclick on generate
+
 function outputUpdate(){
-    document.querySelector('#slider').value =length
+    var range = document.getElementById("length");
+var output = document.getElementById("slider");
+output.innerHTML = range.value;
+range.oninput = function() {
+output.innerHTML = this.value;
 }
+}
+//setting my generate function to be called on an onclick on generate
 function generate() {
 userPassword = "";
 passwordCharSet = "";
