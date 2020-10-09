@@ -8,6 +8,12 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    * {
+        margin-top: 10px;
+       
+    }
+  </style>
 
   <body>
     <div class="wrapper">
@@ -17,12 +23,12 @@
       </header>
       <div class="card">
     
-         
+        <div class="alert" id="alert"><span class="message" id="message"></div>
         </div>
         <div class="controls">
             <div class="control length" id="length-box" >
-              <label for="length">Password Length</label>
-              <input type="range" id='length' min="4" max="20" list="ranges">
+              <label for="length">Password Length (8 - 125)</label>
+              <input type="range" id='length' min="8" max="128" list="ranges">
               <datalist id="ranges">
                 <option value="4" label="4">
                 <option value="5">
@@ -45,19 +51,19 @@
             </div>
             <div class="control">
               <input type="checkbox" id="lowercase">
-              <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase Characters</span></label>
+              <label class="check-label" for="lowercase"><span class="checkbox">Lowercase Characters</span></label>
             </div>
             <div class="control">
               <input type="checkbox" id="uppercase">
-              <label class="check-label" for="uppercase"><span class="checkbox">Use Uppercase Characters</span></label>
+              <label class="check-label" for="uppercase"><span class="checkbox">Uppercase Characters</span></label>
             </div>
             <div class="control">
               <input type="checkbox" id="numbers">
-              <label class="check-label" for="numbers"><span class="checkbox">Use Numbers</span></label>
+              <label class="check-label" for="numbers"><span class="checkbox">Numbers</span></label>
             </div>
             <div class="control">
               <input type="checkbox" id="punctuation">
-              <label class="check-label" for="punctuation"><span class="checkbox">Use special characters</span></label>
+              <label class="check-label" for="punctuation"><span class="checkbox">special characters</span></label>
         <div class="card-body">
           <textarea
             readonly
