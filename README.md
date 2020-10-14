@@ -21,3 +21,12 @@ They will also have the possibility of chosing the password length with a minimu
  and if any forther assistace is needed ,you can write to me via github chunga-codder 
  
  
+#SOME IMAGES OF HOW IS UI LOOKS LIKE
+
+
+
+![IMG_20201014_183832_9](https://user-images.githubusercontent.com/71171928/96025340-e2c81980-0e4c-11eb-9e44-46c84e940bfb.jpg)
+
+
+
+![IMG_20201014_183842_8](https://user-images.githubusercontent.com/71171928/96025349-e491dd00-0e4c-11eb-840a-c491c53582c5.jpg)
