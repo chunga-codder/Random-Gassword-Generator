@@ -96,7 +96,9 @@ function generate() {
 generateButton.addEventListener("click", generate);
 
 
-PLS NOTE THATA, this source code can change from time to time and the layout as i can be updatting and pushing always , but
+PLS NOTE THAT,
+
+this source code can change from time to time and the layout as i can be updatting and pushing always , but
 you can vissit my commit massages to know what i have added or removed and will also be commented too.
 
 
